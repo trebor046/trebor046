@@ -58,9 +58,20 @@ Os repositórios desses vídeos são privados. O exemplo aberto é o banner dest
 
 ## Experiência
 
-**Desenvolvedor Full Stack Júnior na AUREA** (até set. 2026)
+**Desenvolvedor Full Stack Júnior na AUREA** (abr. a set. de 2026)
 
-Trabalhei em CRM, dashboards, landing pages e integrações com IA. Em um caso de performance, reescrevi consultas que ignoravam o índice, e a resposta caiu de cerca de 7 s para cerca de 600 ms.
+A AUREA é uma empresa de tecnologia que desenvolveu as plataformas internas usadas pelo time da Aceleraí, empresa que conecta marcas a celebridades para campanhas de publicidade. Trabalhei em seis desses sistemas:
+
+- **Aceleraí CRM**: sustentação perto dos vendedores, do banco de dados ao front-end.
+- **Aceleraí Vision**: ajudei a montar o painel de desempenho do time comercial e fiz a maior parte dos gráficos.
+- **Aurea Pages**: peguei a plataforma de landing pages já funcionando e trabalhei na evolução dela.
+- **Aurea Cloud**: trabalhei na camada visual do painel de marketing.
+- **Curadoria**: trabalhei na visualização do painel.
+- **Abracadabra**: participação menor, em testes e detalhes visuais.
+
+Em um caso de performance, reescrevi consultas que ignoravam o índice, e a resposta do painel principal caiu de cerca de 7 s para cerca de 600 ms.
+
+O código desses sistemas pertence à empresa e fica nos repositórios privados dela, que eu acessava com a conta corporativa. Por isso ele não está neste GitHub. Contei o que fiz em cada um em [experiencia/aurea.md](experiencia/aurea.md).
 
 ## Contato
 
