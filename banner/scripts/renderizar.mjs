@@ -20,9 +20,11 @@ const renders = [
 
 for (const { composicao, arquivo } of renders) {
   const destino = join(assets, arquivo);
+  // Caminho relativo à pasta do banner: sem espaço nem caractere especial,
+  // então não precisa de aspas no shell (que o npx exige no Windows).
   const resultado = spawnSync(
     "npx",
-    ["remotion", "render", composicao, `"${destino}"`, "--codec=gif"],
+    ["remotion", "render", composicao, `../assets/${arquivo}`, "--codec=gif"],
     { cwd: pastaDoBanner, stdio: "inherit", shell: true },
   );
 

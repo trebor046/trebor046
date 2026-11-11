@@ -20,7 +20,7 @@ const saida = join(raiz, "assets");
 const FONTE =
   "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif";
 
-export const blocos = [
+const blocos = [
   {
     nome: "Front",
     cor: "front",
@@ -43,7 +43,7 @@ export const blocos = [
   },
 ];
 
-export const projetos = [
+const projetos = [
   {
     arquivo: "projeto-veylo",
     nome: "Veylo",
@@ -72,8 +72,10 @@ const escapar = (texto) =>
 const larguraDoTexto = (texto, tamanho) => texto.length * tamanho * 0.6;
 
 function svgDaStack(cores) {
-  const LARGURA = 720;
-  const INICIO_DA_PISTA = 174;
+  const LARGURA = 736;
+  // Coluna dos rótulos com folga: "Vídeo em código" passa de 180 px em
+  // fontes largas (DejaVu Sans, no Linux sem Noto).
+  const INICIO_DA_PISTA = 190;
   const ALTURA_DA_PISTA = 52;
   const VAO = 8;
   const altura = blocos.length * (ALTURA_DA_PISTA + VAO) - VAO;
@@ -101,6 +103,11 @@ function svgDaStack(cores) {
         `<text x="${x + largura / 2}" y="${meio + 6.5}" font-size="19" font-weight="600" text-anchor="middle" fill="${cores.tintaNoClip}">${escapar(item)}</text>`,
       );
       x += largura + 8;
+    }
+    if (x > LARGURA) {
+      throw new Error(
+        `O bloco "${bloco.nome}" não cabe na pista: precisa de ${x} de ${LARGURA}.`,
+      );
     }
   });
 
