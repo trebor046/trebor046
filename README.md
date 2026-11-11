@@ -58,7 +58,7 @@ Os repositórios desses vídeos são privados. O exemplo aberto é o banner dest
 
 ## Experiência
 
-**Desenvolvedor Full Stack Júnior na AUREA**
+**Desenvolvedor Full Stack Júnior na AUREA** (até set. 2026)
 
 Trabalhei em CRM, dashboards, landing pages e integrações com IA. Em um caso de performance, reescrevi consultas que ignoravam o índice, e a resposta caiu de cerca de 7 s para cerca de 600 ms.
 
