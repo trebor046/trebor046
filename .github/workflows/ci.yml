@@ -1,0 +1,48 @@
+name: CI
+
+# Baseado no modelo do fluxo padrão (feature -> staging -> main), adaptado:
+# aqui o código (banner em Remotion) fica na subpasta banner/ e o que vai
+# para o ar é o README com os arquivos de assets/.
+
+on:
+  pull_request:
+    branches: [staging, main]
+  push:
+    branches: [staging, main]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: build + lint + test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Testes (README e assets)
+        run: |
+          if [ -f scripts/conferir-assets.mjs ]; then
+            node scripts/conferir-assets.mjs
+          else
+            echo "Sem scripts/conferir-assets.mjs — pulando."
+          fi
+
+      - name: Instalar dependências do banner
+        if: hashFiles('banner/package-lock.json') != ''
+        working-directory: banner
+        run: npm ci
+
+      - name: Lint e tipos do banner
+        if: hashFiles('banner/package-lock.json') != ''
+        working-directory: banner
+        run: npm run lint
+
+      - name: Build do banner (bundle do Remotion)
+        if: hashFiles('banner/package-lock.json') != ''
+        working-directory: banner
+        run: npm run build

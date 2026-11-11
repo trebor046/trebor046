@@ -1,0 +1,19 @@
+# segredos
+.env*
+!.env.example
+
+# dependências e builds
+node_modules/
+dist/
+build/
+out/
+.next/
+
+# Remotion (quadros e renders intermediários)
+banner/out/
+banner/build/
+
+# sistema e logs
+*.log
+.DS_Store
+Thumbs.db
