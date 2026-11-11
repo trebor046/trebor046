@@ -4,7 +4,7 @@
   <img src="assets/banner-claro.gif" width="100%" alt="Robert Sousa, desenvolvedor full stack: web, banco de dados e vídeo em código. Animação de uma linha do tempo de edição de vídeo com quatro pistas: Front, Back, Banco e Vídeo.">
 </picture>
 
-Sou desenvolvedor full stack júnior na AUREA. Faço produtos web com React, Next.js e Supabase, e também faço vídeo escrevendo código, com Remotion.
+Sou desenvolvedor full stack júnior. Faço produtos web com React, Next.js e Supabase, e também faço vídeo escrevendo código, com Remotion.
 
 O banner acima é um desses vídeos: escrevi em React e renderizei com Remotion. O código está na pasta [`banner/`](banner).
 
@@ -60,7 +60,7 @@ Os repositórios desses vídeos são privados. O exemplo aberto é o banner dest
 
 **Desenvolvedor Full Stack Júnior na AUREA**
 
-Trabalho em CRM, dashboards, landing pages e integrações com IA. Em um caso de performance, reescrevi consultas que ignoravam o índice, e a resposta caiu de cerca de 7 s para cerca de 600 ms.
+Trabalhei em CRM, dashboards, landing pages e integrações com IA. Em um caso de performance, reescrevi consultas que ignoravam o índice, e a resposta caiu de cerca de 7 s para cerca de 600 ms.
 
 ## Contato
 
