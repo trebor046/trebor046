@@ -1,0 +1,26 @@
+{
+  "escuro": {
+    "fundo": "#1C1E2A",
+    "pista": "#262938",
+    "texto": "#EEF0F6",
+    "apagado": "#9195AB",
+    "risco": "#3A3E52",
+    "tintaNoClip": "#1C1E2A",
+    "front": "#8B8DFF",
+    "back": "#2FC4B2",
+    "banco": "#F2AE49",
+    "video": "#F26D94"
+  },
+  "claro": {
+    "fundo": "#EFEFF5",
+    "pista": "#E0E0EB",
+    "texto": "#1C1E2A",
+    "apagado": "#5D6076",
+    "risco": "#C3C4D4",
+    "tintaNoClip": "#FFFFFF",
+    "front": "#5759DB",
+    "back": "#0B8577",
+    "banco": "#A9650A",
+    "video": "#C9386A"
+  }
+}
